@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pacific | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="main-nav">
+    <a href="#">Home</a>
+    <a class="scroll-to" href="#menu">Menu</a>
+    <a class="scroll-to" href="#location">Location</a>
+    <a href="#reservations">Reservations</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+  <header>
+    <h1>Pacific</h1>
+    <h2>Seafood Served Fresh Daily</h2>
+  </header>
+  <main>
+
+    <section id="menu" class="menu">
+      <h3>Menu</h3>
+      <!-- Add grid system classes -->
+      <ul class="menu-nav">
+        <li><a href="#" class="selected" data-menu="brunch">Brunch</a> /</li>
+        <li><a href="#" data-menu="dinner">Dinner</a> /</li>
+        <li><a href="#" data-menu="drinks">Drinks</a></li>
+      </ul>
+      <div id="brunch" class="grid-3 menu-panel">
+        <div>
+          <h4>Onion Quiche</h4>
+          <p>quiche of caramelized onions, pickled vegetables, arugula</p>
+        </div>
+        <div>
+          <h4>Lox Bagel</h4>
+          <p>capers, tomato, cream cheese</p>
+        </div>
+        <div>
+          <h4>NY Bagel Plate</h4>
+          <p>smoked salmon, tomato, onion, cream cheese</p>
+        </div>
+        <div>
+          <h4>Smoked Salmon Benedict</h4>
+          <p>wild smoked salmon, poached eggs, english muffin</p>
+        </div>
+        <div>
+          <h4>Warm Quinoa</h4>
+          <p>blueberries, almonds, sweet cream</p>
+        </div>
+        <div>
+          <h4>Challah French Toast</h4>
+          <p>almonds, maple whipped cream</p>
+        </div>
+      </div>
+      <div id="dinner" class="grid-3 menu-panel">
+        <div>
+          <h4>Primavera Salad</h4>
+          <p>arugula, cherry tomato, shallot vinaigrette</p>
+        </div>
+        <div>
+          <h4>Grilled Calamari</h4>
+          <p>tomato sauce, lemon</p>
+        </div>
+        <div>
+          <h4>Branzino</h4>
+          <p>cucumber, shallots, puffed brown rice</p>
+        </div>
+        <div>
+          <h4>Yellowfin Tuna</h4>
+          <p>aged balsamic and crispy fennel</p>
+        </div>
+        <div>
+          <h4>Maya Prawns</h4>
+          <p>corriander mayonnaise</p>
+        </div>
+        <div>
+          <h4>Cold Poached Lobster</h4>
+          <p>tomalley vinaigrette</p>
+        </div>
+      </div>
+      <div id="drinks" class="grid-4 menu-panel">
+        <div>
+          <h4>Manhattan</h4>
+          <p>rye whisky, sweet vermouth, bitters</p>
+        </div>
+        <div>
+          <h4>Dark &amp; Stormy</h4>
+          <p>black rum, ginger beer, lime</p>
+        </div>
+        <div>
+          <h4>Old Cuban</h4>
+          <p>aged rum, lime juice, bitters, champagne</p>
+        </div>
+        <div>
+          <h4>Negroni</h4>
+          <p>gin, vermouth rosso, campari</p>
+        </div>
+        <div>
+          <h4>Bloody Mary</h4>
+          <p>tomato juice, vodka, tabasco, bacon bits</p>
+        </div>
+        <div>
+          <h4>Green &amp; Amber</h4>
+          <p>vodka, single-malt scotch, honey, lemon, green tea</p>
+        </div>
+        <div>
+          <h4>White Russian</h4>
+          <p>vodka, tia maria, heavy cream</p>
+        </div>
+        <div>
+          <h4>Sauvignon Blanc</h4>
+          <p>cloudy bay, new zealand, 2012</p>
+        </div>
+
+      </div>
+    </section>
+    <section class="slider">
+        <img src="images/carousel-1.jpg" alt="Oysters">
+        <img src="images/carousel-2.jpg" alt="Oysters">
+        <img src="images/carousel-3.jpg" alt="Oysters">
+        <img src="images/carousel-4.jpg" alt="Oysters">
+        <a href="#" class="arrow-right"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="arrow-left"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      </div>
+    </section>
+    <section id="location" class="location">
+      <h3>Location</h3>
+      <div class="grid-4">
+        <div class="contact">
+          <h4>Phone</h4>
+          <p>(415) 243-1234</p>
+
+          <h4>Location</h4>
+          <p>30 Bolinas Ave</p>
+          <p>at Downtown Plaza</p>
+          <p>Bolinas, CA 94110</p>
+
+          <h4>Hours</h4>
+          <p>M-Th 5p–11p</p>
+          <p>F-Sa 12p–11p</p>
+          <p>Su 10a–11p</p>
+        </div>
+        <div class="map">
+          <iframe src="https://snazzymaps.com/embed/14820" width="100%" height="400px" style="border:none;"></iframe>
+        </div>
+      </div>
+
+    </section>
+    <section class="reservations" id="reservations">
+      <button class="make-reservation">Make Reservation</button>
+    </section>
+    <div class="modal">
+      <div class="content">
+        <a href="#" class="close-modal"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <form action="">
+          <h3>Request a Reservation</h3>
+          <input type="text" placeholder="Full Name">
+          <input type="text" placeholder="Email Address">
+          <textarea placeholder="When would you like to make a reservation?"></textarea>
+          <button>Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="highlight">
+    <div class="grid-3 wrap">
+      <div>
+        <h4>Hours</h4>
+        <p>M-Th 5p–11p</p>
+        <p>F-Sa 12p–11p</p>
+        <p>Su 10a–11p</p>
+      </div>
+      <nav>
+        <a class="scroll-to" href="#menu">Menu</a>
+        <a class="scroll-to" href="#location">Location</a>
+        <a href="#reservations">Reservations</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+      <div>
+        <h4>Phone</h4>
+        <p>(415) 243-1234</p>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

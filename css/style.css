@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+}
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+h1, h2, h4, a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 100px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 45px;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  margin: 20px;
+  display: inline-block;
+  color: #222;
+}
+
+ul li {
+  display: inline-block;
+}
+
+/* ----------------------------------------
+Grid System
+------------------------------------------- */
+[class^="grid"] {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.grid-4 {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.contact {
+  grid-column: 1 / 2;
+}
+
+.map {
+  grid-column: 2 / 5;
+}
+
+section {
+  padding: 80px;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header {
+  color: white;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav {
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.main-nav a {
+  color: white;
+  margin: 20px 30px;
+}
+
+.scrolled {
+  background-color: white;
+}
+
+.scrolled a {
+  color: #222;
+}
+
+
+/* ----------------------------------------
+Menu
+------------------------------------------- */
+.menu-nav {
+  text-align: center;
+  padding: 0;
+  margin: 50px 0 45px;
+}
+
+.menu-nav a {
+  margin: 0 20px;
+  color: #E26A38;
+  padding-bottom: 3px;
+}
+
+.selected {
+  border-bottom: 2px solid #E26A38;
+}
+
+.menu-panel {
+  padding: 30px 0;
+}
+
+
+
+
+/* ----------------------------------------
+Drinks
+------------------------------------------- */
+
+.drinks {
+  background-image: url('../images/oysters.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+
+
+/* ----------------------------------------
+Slider
+------------------------------------------- */
+.slider img:not(:first-of-type) {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+[class^="arrow"] {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  font-size: 80px;
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+  right: 20px;
+}
+
+/* ----------------------------------------
+Location
+------------------------------------------- */
+#map {
+  height: 600px;
+}
+
+/* ----------------------------------------
+Reservations
+------------------------------------------- */
+.reservations {
+  text-align: center;
+  background-color: #C8D7D4;
+  color: white;
+}
+
+.reservations button {
+  background-color: #E26A38;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0;
+  padding: 20px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  z-index: 200;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.close-modal {
+  color: #222;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.content {
+  background-color: white;
+  padding: 10px 40px 40px;
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  border: 2px solid #222;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding: 8px 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.content button {
+  background-color: #222;
+  width: 100%;
+  display: block;
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px 10px;
+  margin-top: 25px;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+
+footer {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer nav a {
+  display: block;
+}
+
+footer .fa {
+  font-size: 30px;
+}
+
+footer .fa:hover {
+  -webkit-animation: jiggle .2s 8;
+          animation: jiggle .2s 8;
+}
+
+footer .wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/* animation: jiggle .3s infinite; */
+ @-webkit-keyframes jiggle {
+0% {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+40% {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+80% {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+100% {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+}
+ @keyframes jiggle {
+0% {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+40% {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+80% {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+100% {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+}
+
+
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */

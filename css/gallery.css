@@ -1,0 +1,9 @@
+header {
+  background-image: url('../images/gallery-header.jpg');
+  background-position: bottom;
+  height: 300px;
+}
+
+header h1 {
+  font-size: 70px;
+}
